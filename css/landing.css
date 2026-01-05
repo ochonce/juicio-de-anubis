@@ -33,10 +33,20 @@
     text-align: center;
 }
 
-.content h1 {
-    font-size: 4rem;
-    letter-spacing: 0.25em;
-    margin-bottom: 40px;
+/* ===== TÍTULO EN IMAGEN ===== */
+.landing-title {
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 50px;
+    filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.25));
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .landing-title {
+        max-width: 90%;
+        margin-bottom: 40px;
+    }
 }
 
 .enter-btn {
