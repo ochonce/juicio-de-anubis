@@ -33,33 +33,32 @@
     text-align: center;
 }
 
-/* ===== TÍTULO EN IMAGEN ===== */
+/* ===== TÍTULO (PNG) ===== */
 .landing-title {
-    max-width: 70%;
+    max-width: 36%;
     height: auto;
-    margin-bottom: 50px;
-    filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.25));
+    margin-bottom: 55px;
+    filter: drop-shadow(0 0 22px rgba(255, 255, 255, 0.25));
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .landing-title {
-        max-width: 90%;
+        max-width: 48%;
         margin-bottom: 40px;
     }
 }
 
+/* ===== INGRESAR (TEXTO MINIMAL) ===== */
 .enter-btn {
-    padding: 15px 40px;
-    border: 2px solid #ffffff;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    letter-spacing: 0.15em;
-    transition: all 0.3s ease;
+    all: unset;                /* 🔥 borra TODOS los estilos del link */
+    color: #9a9a9a;             /* gris */
+    font-size: 1.1rem;
+    letter-spacing: 0.25em;
+    text-transform: lowercase; /* ingresar */
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
 
 .enter-btn:hover {
-    background: #ffffff;
-    color: #000000;
+    color: #ffffff;
 }
